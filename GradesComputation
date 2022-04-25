@@ -1,0 +1,34 @@
+import java.io.*;
+
+public class AngAct2 {
+    public static void main(String args[]) throws IOException
+    {
+        BufferedReader br = new BufferedReader (new InputStreamReader (System.in));
+
+        System.out.print("Enter your name: ");
+        String name = br.readLine();
+
+        System.out.print("Enter your grade in Math: ");
+        int math = Integer.parseInt(br.readLine());
+
+        System.out.print("Enter your grade in English: ");
+        int eng = Integer.parseInt(br.readLine());
+
+        System.out.print("Enter your grade in Filipino: ");
+        int fil = Integer.parseInt(br.readLine());
+
+        System.out.print("Enter your grade in Science: ");
+        int sci = Integer.parseInt(br.readLine());
+
+        System.out.print("Enter your grade in Makabayan: ");
+        int mak = Integer.parseInt(br.readLine());
+
+        System.out.print("Enter your grade in P.E: ");
+        int pe = Integer.parseInt(br.readLine());
+
+        double ave = (math+eng+fil+sci+mak+pe)/6;
+        System.out.println(name + ", This is the truth.");
+        System.out.println("Your GPA is: " +ave);
+
+    }
+}
